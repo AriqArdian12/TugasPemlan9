@@ -1,9 +1,9 @@
 # TugasPemlan9
 Tugas 9: Modul Bab Operasi File
 
-Nama : Athalariiq Fildzahhanan Ardian
-NIM : 245150707111052
-Kelas : TI-D
+Nama : Athalariiq Fildzahhanan Ardian ,
+NIM : 245150707111052 ,
+Kelas : TI-D .
 
 Tugas Praktikum
 1. Jalankan kode TulisFile1.java beberapa kali dan amati yang terjadi pada file yang
