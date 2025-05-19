@@ -22,26 +22,12 @@ file tersebut tidak ada dan kita tidak melakukan pengecekan lebih dulu?
 Jawaban :
 1. Jadi pada saat kode pada baris ke 13, Ketika parameter false digunakan hanya menyimpan 1 data saja dan Ketika kita ingin menginput data yang baru, maka data yang sebelumnya akan hilang dan digantikan oleh data yang baru. Dan jika parameter di ganti dengan true maka semua data dapat di simpan dengan data yang sebelumnya
 
-2. import java.io.File;
-import java.text.DecimalFormat;
+2. jawaban no 2 diatas
+   
+3. jawaban no 3 diatas
 
-public class UkuranFile {
-    public static void main(String[] args) {
-        File file = new File("test.txt");
-        if (!file.exists()) {
-            System.out.println("File tidak ditemukan.");
-            return;
-        }
-        long bytes = file.length();
-        DecimalFormat df = new DecimalFormat("#.##");
-        if (bytes < 1_048_576) { // < 1 MB
-            double kb = bytes / 1024.0;
-            System.out.println("Ukuran file: " + df.format(kb) + " KB");
-        } else {
-            double mb = bytes / (1024.0 * 1024.0);
-            System.out.println("Ukuran file: " + df.format(mb) + " MB");
-        }
-    }
-}
+4. jawaban no 4 diatas
 
-3.
+5. jika menggunakan statement var file = new File(“C:\Data\Java\teks.txt”); tersebut maka akan menghasilkan error yaitu : Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ ) Maka harus mengubahnya menjadi var file = new File("C:\\Data\\Java\\teks.txt"); Alasan mengapa bisa error: Karena Di Java , karakter backslash (\) digunakan sebagai escape character, sedangkan backslash sebenarnya adalah : \\
+
+6. Jika langsung membuat new FileReader("namaFile") atau Files.readAllLines(...) tanpa cek exists(), maka akan terjadi. FileNotFoundException (turunan dari IOException). Dan Program akan men-throw exception dan, jika tidak ditangkap (catch), aplikasi akan crash dan stack trace muncul.
