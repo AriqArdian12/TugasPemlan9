@@ -32,6 +32,6 @@ Jawaban :
 
 4. jawaban no 4 diatas
 
-5. jika menggunakan statement var file = new File(“C:\Data\Java\teks.txt”); tersebut maka akan menghasilkan error yaitu : Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ ) Maka harus mengubahnya menjadi var file = new File("C:\\Data\\Java\\teks.txt"); Alasan mengapa bisa error: Karena Di Java , karakter backslash (\) digunakan sebagai escape character, sedangkan backslash sebenarnya adalah : \\
+5. jika menggunakan statement var file = new File(“C:\Data\Java\teks.txt”); tersebut maka akan menghasilkan error yaitu : Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\\ ) Maka harus mengubahnya menjadi var file = new File("C:\\\Data\\\Java\\\teks.txt"); Alasan mengapa bisa error: Karena Di Java , karakter backslash (\) digunakan sebagai escape character, sedangkan backslash sebenarnya adalah : \\\
 
 6. Jika langsung membuat new FileReader("namaFile") atau Files.readAllLines(...) tanpa cek exists(), maka akan terjadi. FileNotFoundException (turunan dari IOException). Dan Program akan men-throw exception dan, jika tidak ditangkap (catch), aplikasi akan crash dan stack trace muncul.
